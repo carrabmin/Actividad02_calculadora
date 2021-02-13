@@ -38,5 +38,46 @@ public class Operacion {
 		         else 
 		          return true;
 		    }
+		
+		/**
+		 * Este es el método que averigua el número primo asociado
+		 * a la posicion que pasamos como parámetro
+		 * 
+		 * @param posicion que queremos averiguar del número primo
+		 * @return el número primo asociado a la posición
+		 * 
+		 * CASO ESPECIAL: Si introducimos un cero como parámetro, informamos por consola que no es una posición permitida
+		 */
+			public int posicionPrimo(int posicion) {
+				
+				if(posicion<=0){
+					   System.out.println("ERROR: Posición no permitida");
+				}
+				
+				 int primos[] = new int[posicion];
+				 	primos[0] = 2;
+			    	primos[1] = 3;
+				 int probar = 3, numeroDePrimosActual = 2;
+				   
+				   if(posicion == 1){
+				     } else if(posicion == 2) {
+				     } else {
+				 
+				     while(numeroDePrimosActual < posicion){
+				     probar = probar + 2;
+				     int contador = 0;
+				 
+				            while(probar % primos[contador] > 0 && contador < numeroDePrimosActual && probar * 10 / primos[contador] > 9 ){
+				             if(contador + 1 == numeroDePrimosActual ){
+				             primos[numeroDePrimosActual] = probar;
+				             numeroDePrimosActual = (numeroDePrimosActual + 1);
+				             } else {
+				               }
+				             contador = (contador + 1);
+				             }
+				      }
+				     }
+				return primos[posicion - 1];
+			}
 
 }
