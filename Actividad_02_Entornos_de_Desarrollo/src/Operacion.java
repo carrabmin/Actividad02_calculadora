@@ -79,5 +79,39 @@ public class Operacion {
 				     }
 				return primos[posicion - 1];
 			}
+			
+		/**
+		 * Este es un método que calcula el porcentaje de un número
+		 *  
+		 * @param numero sobre el que queremos calcular el porcentaje
+		 * @param porcentaje que queremos calcular sobre el número
+		 * @return fórmula para calcular el porcentaje
+		 * 
+		 * CASO ESPECIAL: Si introducimos un cero como parámetro, el resultado será cero
+		 */
+			public int calcularPorcentaje(int numero, int porcentaje) {
+				return (numero * porcentaje/100);
+			}
+				
+		/**
+		 * Este es un método para calcular el factorial de un número
+		 * 
+		 * @param n es el número sobre el que queremos calcular el factorial
+		 * @return resultado de calcular el factorial del número
+		 * 
+		 * CASO ESPECIAL: Si introducimos un cero como parámetro, el resultado será 1
+		 */
+				
+			public int factorial(int n) {
+		        int resultado = 1;
+		        for (int i = 1; i <= n; i++) {
+		            resultado *= i;
+		        }
+		        return resultado;
+			}
+			
+			
+}			
 
-}
+
+
