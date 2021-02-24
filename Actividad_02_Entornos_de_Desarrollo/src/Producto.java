@@ -15,12 +15,10 @@ public class Producto {
 	public Producto() {
 		super();
 	}
-	
 
 	/**
 	 * para multiplicar dos números enteros en caso que uno de los parámetros sea 0,
-	 * el resultado siempre será 0 
-	 * los parámetros metidos deben de esar entre 0 y
+	 * el resultado siempre será 0 los parámetros metidos deben de esar entre 0 y
 	 * 9223372036854775807. De lo contrario saltaría error
 	 * 
 	 * @param x
@@ -33,8 +31,7 @@ public class Producto {
 
 	/**
 	 * para multiplicar con dos números reales en caso que uno de los parámetros sea
-	 * 0, el resultado siempre será 0 
-	 * los parámetros metidos deben de esar entre 0 y
+	 * 0, el resultado siempre será 0 los parámetros metidos deben de esar entre 0 y
 	 * 1.797E308. De lo contrario saltaría error
 	 * 
 	 * @param x
@@ -43,6 +40,20 @@ public class Producto {
 	 */
 	public double multiplicar(double x, double a) {
 		return x * a;
+	}
+
+	/**
+	 * para multiplicar tres números a la vez, tanto reales como enteros en caso que
+	 * uno de los parámetros sea 0, el resultado siempre será 0 los parámetros
+	 * metidos deben de esar entre 0 y 1.797E308. De lo contrario saltaría error.
+	 * 
+	 * @param x
+	 * @param a
+	 * @param c
+	 * @return x * a * c
+	 */
+	public double multiplicar(double x, double a, double c) {
+		return x * a * c;
 	}
 
 }
