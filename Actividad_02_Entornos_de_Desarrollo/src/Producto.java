@@ -55,5 +55,36 @@ public class Producto {
 	public double multiplicar(double x, double a, double c) {
 		return x * a * c;
 	}
+	/**
+	 * para sacar la potencia de un número entero en caso que el parámetro x sea 0,
+	 * el resultado siempre será 0. En caso que el parámetro a sea 0, el resultado
+	 * será siempre 1 independientemete del parámetro de su base 
+	 * usámos el tipo de
+	 * parámetros long para ampliar la capacidad de los números introducidos 
+	 * los parámetros metidos deben de esar entre 0 y 9223372036854775807. De lo
+	 * contrario saltaría error
+	 * 
+	 * @param x
+	 * @param a
+	 * @return Potencia de x elevado a a
+	 */
+	public long potencia(long x, long a) {
+		return (long) Math.pow(x, a);
+	}
+
+	/**
+	 * para sacar la potencia de un número real en caso que el parámetro x sea 0, el
+	 * resultado siempre será 0. En caso que el parámetro a sea 0, el resultado será
+	 * siempre 1 independientemete del parámetro de su base 
+	 * los parámetros metidos
+	 * deben de esar entre 0 y 1.797E308. De lo contrario saltaría error
+	 * 
+	 * @param x
+	 * @param a
+	 * @return Potencia de x elevado a a
+	 */
+	public double potencia(double x, double a) {
+		return Math.pow(x, a);
+	}
 
 }
