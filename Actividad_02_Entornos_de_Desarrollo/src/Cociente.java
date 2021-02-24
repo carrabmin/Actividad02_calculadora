@@ -54,6 +54,31 @@ public class Cociente {
 		return a / b;
 	}
 
+	/**
+	 * Recibimos un solo parámetro
+	 * @param a se usa
+	 * CASO ESPECIAL: Si el parametro recibido es 0, no obtendremos un resultado bien definido.
+	 * Devolvemos la division de 1 con el parámetro recibido
+	 * @return 1/a
+	 * 
+	 */
 	
+	public int cocienteInverso (int a) {
+		return 1 / a;
+	}
+	
+	/**
+	 * Recibimos un solo parámetro
+	 * @param a se usa
+	 * CASO ESPECIAL: Si el parametro recibido es 0, el resultado será 0.
+	 * Realizamos una raíz cuadrada con la función Math.random
+	 * @return a = (int) Math.random()
+	 */
+	
+	public int cocienteRaiz (int a) {
+		return a = (int) Math.random();
+	}
 }
+
+
 
