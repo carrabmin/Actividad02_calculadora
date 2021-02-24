@@ -1,7 +1,6 @@
 /**
  * clase para dotar a la calculadora de un método para multiplicar y sacar
- * potencias
- * La calculadora no admite números negativos, se lanzaría un aviso en
+ * potencias La calculadora no admite números negativos, se lanzaría un aviso en
  * cada operarición
  * 
  * @author esm980
@@ -10,12 +9,40 @@
  * 
  */
 public class Producto {
-/**
- * Constructor vacio
- */
+	/**
+	 * Constructor vacio para crear objeto
+	 */
 	public Producto() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+	
+
+	/**
+	 * para multiplicar dos números enteros en caso que uno de los parámetros sea 0,
+	 * el resultado siempre será 0 
+	 * los parámetros metidos deben de esar entre 0 y
+	 * 9223372036854775807. De lo contrario saltaría error
+	 * 
+	 * @param x
+	 * @param a
+	 * @return x * a
+	 */
+	public long multiplicar(long x, long a) {
+		return x * a;
+	}
+
+	/**
+	 * para multiplicar con dos números reales en caso que uno de los parámetros sea
+	 * 0, el resultado siempre será 0 
+	 * los parámetros metidos deben de esar entre 0 y
+	 * 1.797E308. De lo contrario saltaría error
+	 * 
+	 * @param x
+	 * @param a
+	 * @return x * a
+	 */
+	public double multiplicar(double x, double a) {
+		return x * a;
 	}
 
 }
