@@ -27,6 +27,33 @@ public class Cociente {
 	}
 	
 	
+	/**
+	 * Leemos dos parametros enteros distintos
+	 * @param a se usa
+	 * @param b se usa
+	 * CASO ESPECIAL: Si uno de los parámetros es 0, no obtendremos un resultado bien definido.
+	 * Devolvemos la división de ambos parámetros recibidos
+	 * @return a/b
+	 */
+
+	
+	public int cocienteEnteros (int a, int b) {
+		return a / b;
+	}
+	
+	/**
+	 * Leemos dos parametros Reales distintos
+	 * @param a se usa 
+	 * @param b se usa 
+	 * CASO ESPECIAL: Si uno de los parámetros es 0, no obtendremos un resultado bien definido.
+	 * Devolvemos la división de ambos parámetros recibidos
+	 * @return a/b
+	 */
+	
+	public double cocienteReales (double a, double b) {
+		return a / b;
+	}
+
 	
 }
 
