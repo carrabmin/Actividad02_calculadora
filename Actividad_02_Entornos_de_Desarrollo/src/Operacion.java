@@ -89,7 +89,7 @@ public class Operacion {
 		 * 
 		 * CASO ESPECIAL: Si introducimos un cero como parámetro, el resultado será cero
 		 */
-			public int calcularPorcentaje(int numero, int porcentaje) {
+			public double calcularPorcentaje(double numero, double porcentaje) {
 				return (numero * porcentaje/100);
 			}
 				
