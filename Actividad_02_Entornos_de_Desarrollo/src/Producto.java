@@ -10,7 +10,7 @@
  */
 public class Producto {
 	/**
-	 * Constructor vacio para crear objeto
+	 * Constructor vacio para crear objeto, para poder generar un objeto
 	 */
 	public Producto() {
 		super();
@@ -18,8 +18,9 @@ public class Producto {
 
 	/**
 	 * para multiplicar dos números enteros en caso que uno de los parámetros sea 0,
-	 * el resultado siempre será 0 los parámetros metidos deben de esar entre 0 y
-	 * 9223372036854775807. De lo contrario saltaría error
+	 * el resultado siempre será 0
+	 * Caso especial: los parámetros metidos deben de esar entre 0 y
+	 * 9,223,372,036,854,775,807. De lo contrario saltaría error
 	 * 
 	 * @param x
 	 * @param a
@@ -31,7 +32,8 @@ public class Producto {
 
 	/**
 	 * para multiplicar con dos números reales en caso que uno de los parámetros sea
-	 * 0, el resultado siempre será 0 los parámetros metidos deben de esar entre 0 y
+	 * 0, el resultado siempre será 0 
+	 * Caso especial: los parámetros metidos deben de esar entre 0 y
 	 * 1.797E308. De lo contrario saltaría error
 	 * 
 	 * @param x
@@ -45,7 +47,7 @@ public class Producto {
 	/**
 	 * para multiplicar tres números a la vez, tanto reales como enteros en caso que
 	 * uno de los parámetros sea 0, el resultado siempre será 0 los parámetros
-	 * metidos deben de esar entre 0 y 1.797E308. De lo contrario saltaría error.
+	 * Caso especial: metidos deben de esar entre 0 y 1.797E308. De lo contrario saltaría error.
 	 * 
 	 * @param x
 	 * @param a
@@ -61,8 +63,7 @@ public class Producto {
 	 * será siempre 1 independientemete del parámetro de su base 
 	 * usámos el tipo de
 	 * parámetros long para ampliar la capacidad de los números introducidos 
-	 * los parámetros metidos deben de esar entre 0 y 9223372036854775807. De lo
-	 * contrario saltaría error
+	 * Caso Especial: los parámetros metidos deben de esar entre 0 y 9223372036854775807. De lo contrario saltaría error
 	 * 
 	 * @param x
 	 * @param a
@@ -76,9 +77,8 @@ public class Producto {
 	 * para sacar la potencia de un número real en caso que el parámetro x sea 0, el
 	 * resultado siempre será 0. En caso que el parámetro a sea 0, el resultado será
 	 * siempre 1 independientemete del parámetro de su base 
-	 * los parámetros metidos
-	 * deben de esar entre 0 y 1.797E308. De lo contrario saltaría error
-	 * 
+	 * Caso Especial: los parámetros metidos deben de esar entre 0 y 1.797E308. De lo contrario saltaría error
+	 * Caso Especial: en el caso de algún parámetro NaN el resultado daría un NaN
 	 * @param x
 	 * @param a
 	 * @return Potencia de x elevado a a
