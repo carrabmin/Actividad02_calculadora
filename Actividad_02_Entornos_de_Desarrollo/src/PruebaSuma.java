@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class SumaTest {
+class PruebaSuma {
 	private Suma cut;
 
 	@BeforeEach
@@ -57,6 +57,16 @@ class SumaTest {
 
 		double obtenido = cut.sumaValorAcumulado(x, y, s);
 		assertEquals(esperado, obtenido, "El resultado de sumar 3 + 2 y ello sumar 2 debe ser 7");
+	}
+	
+	@Test
+	void sumaDeNaNDebeSerNan() {
+		double x = Double.NaN;
+		double y = Double.NaN;
+		double esperado = Double.NaN;
+
+		double obtenido = cut.sumaDosReales(x, y);
+		assertEquals(esperado, obtenido, "El resultado de la suma de dos NaN debe ser NaN");
 	}
 	
 
