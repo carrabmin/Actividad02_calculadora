@@ -20,6 +20,18 @@ class PruebaProducto {
 	}
 	
 	@Test
+	void elProductoDe20Por30DebeSer600() {
+		// 1 Arrange - Preparar
+		long x = 20;
+		long a = 30;
+		long esperado = 600;
+		// 2 Act - Ejecutar
+		long obtenido = cut.multiplicar(x, a);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, obtenido, "El Producto de 20 por 30 debe ser 600");
+	}
+	
+	@Test
 	void elProductoDe5Por100DebeSer500() {
 		// 1 Arrange - Preparar
 		double x = 5;
@@ -29,6 +41,18 @@ class PruebaProducto {
 		double obtenido = cut.multiplicar(x, a);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, obtenido, "El Producto de 5 por 100 debe ser 500");
+	}
+	
+	@Test
+	void elProductoDe0PorNaNDebeSerNaN() {
+		// 1 Arrange - Preparar
+		double x = 0;
+		double a = Double.NaN;
+		double esperado = Double.NaN;
+		// 2 Act - Ejecutar
+		double obtenido = cut.multiplicar(x, a);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, obtenido, "El Producto de 0 por NaN debe ser NaN");
 	}
 	
 	@Test
@@ -42,6 +66,18 @@ class PruebaProducto {
 		double obtenido = cut.multiplicar(x, a, c);
 		// 3 Assert - Comprobar
 		assertEquals(esperado, obtenido, "El producto de 5 por 20 por 10 debe ser 1000");
+	}
+	
+	@Test
+	void laPotenciaDe10ElevadoA4DebeSer10000() {
+		// 1 Arrange - Preparar
+		long x = 10;
+		long a = 4;
+		long esperado = 10000;
+		// 2 Act - Ejecutar
+		long obtenido = cut.potencia(x, a);
+		// 3 Assert - Comprobar
+		assertEquals(esperado, obtenido, "La Potencia de 10 elevado a 4 debe ser 1000");
 	}
 	
 	@Test
