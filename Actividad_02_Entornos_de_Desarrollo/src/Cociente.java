@@ -51,6 +51,9 @@ public class Cociente {
 	 */
 	
 	public double cocienteReales (double a, double b) {
+		if (b == 0)
+			return Double.NaN;
+		
 		return a / b;
 	}
 
@@ -63,7 +66,7 @@ public class Cociente {
 	 * 
 	 */
 	
-	public int cocienteInverso (int a) {
+	public double cocienteInverso (double a) {
 		return 1 / a;
 	}
 	
@@ -75,9 +78,19 @@ public class Cociente {
 	 * @return a = (int) Math.random()
 	 */
 	
-	public int cocienteRaiz (int a) {
-		return a = (int) Math.random();
+	
+	public double cocienteRaiz(double base, double raiz) {
+		
+		double resultado = Math.pow(base, 1.0/raiz);
+		double siguiente = Math.ceil(resultado);
+		
+		if(siguiente - resultado <0.0000001) {
+			return siguiente;
+		}else {
+			return resultado;
+		}
 	}
+	
 }
 
 
