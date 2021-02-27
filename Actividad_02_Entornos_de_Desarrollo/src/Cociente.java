@@ -38,6 +38,8 @@ public class Cociente {
 
 	
 	public int cocienteEnteros (int a, int b) {
+		if (b == 0)
+			return (int) Double.NaN;
 		return a / b;
 	}
 	
@@ -51,6 +53,8 @@ public class Cociente {
 	 */
 	
 	public double cocienteReales (double a, double b) {
+		if (b == 0)
+			return Double.NaN;
 		return a / b;
 	}
 
