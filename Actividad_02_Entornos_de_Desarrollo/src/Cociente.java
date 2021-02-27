@@ -38,6 +38,8 @@ public class Cociente {
 
 	
 	public int cocienteEnteros (int a, int b) {
+		if (b == 0)
+			return (int) Double.NaN;
 		return a / b;
 	}
 	
@@ -53,7 +55,6 @@ public class Cociente {
 	public double cocienteReales (double a, double b) {
 		if (b == 0)
 			return Double.NaN;
-		
 		return a / b;
 	}
 
@@ -66,20 +67,19 @@ public class Cociente {
 	 * 
 	 */
 	
-	public double cocienteInverso (double a) {
+	public int cocienteInverso (int a) {
 		return 1 / a;
 	}
 	
 	/**
 	 * Recibimos un solo parámetro
-	 * @param a se usa
+	 * @param base 
+	 * @param raiz
 	 * CASO ESPECIAL: Si el parametro recibido es 0, el resultado será 0.
-	 * Realizamos una raíz cuadrada con la función Math.random
-	 * @return a = (int) Math.random()
+	 * @return resultado
 	 */
 	
-	
-	public double cocienteRaiz(double base, double raiz) {
+public double cocienteRaiz(double base, double raiz) {
 		
 		double resultado = Math.pow(base, 1.0/raiz);
 		double siguiente = Math.ceil(resultado);
@@ -90,7 +90,6 @@ public class Cociente {
 			return resultado;
 		}
 	}
-	
 }
 
 

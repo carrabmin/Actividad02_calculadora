@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class PruebaCociente {
-
 	private Cociente cut;
 	
 	@BeforeEach
@@ -17,6 +16,8 @@ class PruebaCociente {
 	public void tearDown() {
 		
 	}
+	
+	
 	
 	@Test
 	void elCocienteDe10Entre5DebeSer2() {
@@ -35,7 +36,7 @@ class PruebaCociente {
 		int y = 5;
 		int esperado = 2;
 		
-		int obtenido = cut.cocienteEnteros(10, 5);
+		int obtenido = cut.cocienteEnteros(x, y);
 		assertEquals(esperado, obtenido, "El resultado de dividir 10 entre 5 debe ser 2"); 
 	
 	}
@@ -66,7 +67,7 @@ class PruebaCociente {
 		
 		double esperado = 0.2;
 		
-		double obtenido = cut.cocienteInverso(5);
+		double obtenido = cut.cocienteInverso(x);
 		assertEquals (esperado, obtenido, "El resultado de hacer cociente inverso de 5 debe ser 0.2"); 
 	
 	}
