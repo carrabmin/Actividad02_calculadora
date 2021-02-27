@@ -20,6 +20,8 @@ public class Suma {
 		return num1 + num2;
 	}
 	
+	
+	
 	/**
 	 * Método para sumar dos nº enteros.
 	 * @param num1 Primer nº entero que sea >= 0
@@ -54,7 +56,7 @@ public class Suma {
 		 * @param num2
 		 * @param num3
 		 * @param num4
-		 * La salida será la suma acumulada anteriormente más el nuevo número introducido.
+		 * Se usa un acumulador. La salida será la suma acumulada anteriormente más el nuevo número introducido.
 		 * @return suma + num3
 		 */
 		
