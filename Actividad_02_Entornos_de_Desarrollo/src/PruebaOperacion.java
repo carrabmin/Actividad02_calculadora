@@ -17,6 +17,7 @@ class PruebaOperacion {
 	public void tearDown() {
 	}
 	
+	//Test esPrimo
 	@Test
 	void testEsPrimo() {
 		int a = 5;
@@ -26,6 +27,16 @@ class PruebaOperacion {
 	}
 	
 	@Test
+	void testEsPrimoCon0() {
+		int a = 0;
+		boolean esperado =  false;
+		boolean obtenido = cut.esPrimo(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser false");
+	}
+	
+	
+	//Test posicionPrimo
+	@Test
 	void testPosicionPrimo() {
 		int a = 7;
 		boolean esperado = true;
@@ -34,14 +45,26 @@ class PruebaOperacion {
 	}
 	
 	@Test
+	void testPosicionPrimocon0() {
+		int a = 0;
+		boolean esperado = true;
+		boolean obtenido = cut.esPrimo(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser e");
+	}
+	
+	
+	//Test porcentaje
+	@Test
 	void testPorcentaje() {
-		int a = 40;
-		int b = 25;
-		int esperado = 10;
-		int obtenido = cut.calcularPorcentaje(a, b);
+		double a = 40;
+		double b = 25;
+		double esperado = 10;
+		double obtenido = cut.calcularPorcentaje(a, b);
 		assertEquals (esperado, obtenido, "el resultado es 10");
 	}
 	
+	
+	//TestFactorial
 	@Test
 	void testFactorial() {
 		int a = 5;
