@@ -26,15 +26,28 @@ class PruebaOperacion {
 	}
 	
 	@Test
-	void test1() {
+	void testPosicionPrimo() {
+		int a = 7;
+		boolean esperado = true;
+		boolean obtenido = cut.esPrimo(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser true");
 	}
 	
 	@Test
-	void test2() {
+	void testPorcentaje() {
+		int a = 40;
+		int b = 25;
+		int esperado = 10;
+		int obtenido = cut.calcularPorcentaje(a, b);
+		assertEquals (esperado, obtenido, "el resultado es 10");
 	}
 	
 	@Test
-	void test3() {
+	void testFactorial() {
+		int a = 5;
+		int esperado = 120;
+		int obtenido = cut.factorial(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser 120");
 	}
 
 }

@@ -73,14 +73,22 @@ public class Cociente {
 	
 	/**
 	 * Recibimos un solo parámetro
-	 * @param a se usa
+	 * @param base 
+	 * @param raiz
 	 * CASO ESPECIAL: Si el parametro recibido es 0, el resultado será 0.
-	 * Realizamos una raíz cuadrada con la función Math.random
-	 * @return a = (int) Math.random()
+	 * @return resultado
 	 */
 	
-	public int cocienteRaiz (int a) {
-		return a = (int) Math.random();
+public double cocienteRaiz(double base, double raiz) {
+		
+		double resultado = Math.pow(base, 1.0/raiz);
+		double siguiente = Math.ceil(resultado);
+		
+		if(siguiente - resultado <0.0000001) {
+			return siguiente;
+		}else {
+			return resultado;
+		}
 	}
 }
 
