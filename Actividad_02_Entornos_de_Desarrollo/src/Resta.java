@@ -64,7 +64,7 @@ public class Resta {
 			double resta = num1 - num2;
 			double acumulador = 0;
 			
-			return acumulador += (resta - num3);
+			return acumulador -= (resta - num3);
 			
 		}
 	
