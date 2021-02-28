@@ -1,7 +1,7 @@
 /**
  *Clase para realizar la operación matemática resta. 
  *@author Juan Platero
- *@version 1.0
+ *@version 2.0
  *@since 28/02/2021
  */
 
