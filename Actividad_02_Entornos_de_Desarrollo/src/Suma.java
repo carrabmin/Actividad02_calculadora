@@ -14,6 +14,7 @@ public class Suma {
  * @param num2 Segundo nº real que sea >= 0
  * La salida será la suma de ambos nº.
  * @return num1 + num2
+ * En el caso de que sumemos NaN, el resultado esperado debe ser un NaN.
  */ 
 	
 	public double sumaDosReales (double num1, double num2){
@@ -28,7 +29,6 @@ public class Suma {
 	 * @param num2 Segundo nº entero que sea >= 0
 	 * La salida será la suma de ambos números enteros.
 	 * @return num1 + num2
-	 * En el caso de que sumemos NaN, el resultado esperado debe ser un NaN.
 	 */
 	
 	public int sumaEnteros (int num1, int num2) {
