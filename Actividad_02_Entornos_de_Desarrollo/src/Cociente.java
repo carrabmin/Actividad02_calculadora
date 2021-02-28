@@ -67,7 +67,7 @@ public class Cociente {
 	 * 
 	 */
 	
-	public int cocienteInverso (int a) {
+	public double cocienteInverso (double a) {
 		return 1 / a;
 	}
 	
