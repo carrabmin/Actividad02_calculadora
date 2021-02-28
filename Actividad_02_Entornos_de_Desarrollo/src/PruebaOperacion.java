@@ -25,7 +25,6 @@ class PruebaOperacion {
 		boolean obtenido = cut.esPrimo(a);
 		assertEquals (esperado, obtenido, "el resultado debe ser true");
 	}
-	
 	@Test
 	void testEsPrimoCon0() {
 		int a = 0;
@@ -39,17 +38,16 @@ class PruebaOperacion {
 	@Test
 	void testPosicionPrimo() {
 		int a = 7;
-		boolean esperado = true;
-		boolean obtenido = cut.esPrimo(a);
-		assertEquals (esperado, obtenido, "el resultado debe ser true");
+		int esperado = 17;
+		int obtenido = cut.posicionPrimo(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser 17");
 	}
-	
 	@Test
 	void testPosicionPrimocon0() {
 		int a = 0;
-		boolean esperado = true;
-		boolean obtenido = cut.esPrimo(a);
-		assertEquals (esperado, obtenido, "el resultado debe ser e");
+		int esperado = 0;
+		int obtenido = cut.posicionPrimo(a);
+		assertEquals (esperado, obtenido, "el resultado debe ser true");
 	}
 	
 	

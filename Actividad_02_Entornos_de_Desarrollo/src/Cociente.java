@@ -12,20 +12,11 @@
 
 public class Cociente {
 	
-	/**
-	 * Leemos dos parametros enteros distintos
-	 * @param a se usa
-	 * @param b se usa
-	 * CASO ESPECIAL: Si uno de los parámetros es 0, no obtendremos un resultado bien definido.
-	 * Devolvemos la división de ambos parámetros recibidos
-	 * @return a/b
-	 */
 	
 	public Cociente() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 	
 	/**
 	 * Leemos dos parametros enteros distintos
@@ -67,8 +58,8 @@ public class Cociente {
 	 * 
 	 */
 	
-	public int cocienteInverso (double a) {
-		return (int) (1 / a);
+	public double cocienteInverso (double a) {
+		return (1 / a);
 	}
 	
 	/**
