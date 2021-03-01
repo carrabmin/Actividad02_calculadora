@@ -1,7 +1,6 @@
 /**
- * clase para dotar a la calculadora de un método para multiplicar y sacar
- * potencias La calculadora no admite números negativos, se lanzaría un aviso en
- * cada operarición
+ * clase para dotar a la calculadora de un método para multiplicar y sacar potencias.
+ * La calculadora no admite números negativos, se lanzaría un aviso en cada operarición.
  * 
  * @author esm980
  * @version 1.0
@@ -17,10 +16,9 @@ public class Producto {
 	}
 
 	/**
-	 * para multiplicar dos números enteros en caso que uno de los parámetros sea 0,
-	 * el resultado siempre será 0 
-	 * Caso especial: los parámetros metidos deben de
-	 * estar entre 0 y 9,223,372,036,854,775,807. De lo contrario saltaría error
+	 * Para multiplicar dos números enteros. 
+	 * Caso especial: en caso que uno de los parámetros sea 0, el resultado siempre será 0. 
+	 * Caso especial: los parámetros metidos deben de estar entre 0 y 9,223,372,036,854,775,807. De lo contrario saltaría error
 	 * 
 	 * @param x
 	 * @param a
@@ -31,11 +29,10 @@ public class Producto {
 	}
 
 	/**
-	 * para multiplicar con dos números reales en caso que uno de los parámetros sea
-	 * 0, el resultado siempre será 0 
-	 * Caso especial: los parámetros metidos deben de
-	 * estar entre 0 y 1.797E308. De lo contrario saltaría error
-	 * Caso Especial: en el caso de algún parámetro NaN el resultado sería otro NaN
+	 * Para multiplicar dos números reales.
+	 * Caso especial: en caso que uno de los parámetros sea 0, el resultado siempre será 0. 
+	 * Caso especial: los parámetros metidos deben de estar entre 0 y 1.797E308. De lo contrario saltaría error.
+	 * Caso Especial: en el caso de algún parámetro NaN el resultado sería otro NaN.
 	 * 
 	 * @param x
 	 * @param a
@@ -46,10 +43,9 @@ public class Producto {
 	}
 
 	/**
-	 * para multiplicar tres números a la vez, tanto reales como enteros en caso que
-	 * uno de los parámetros sea 0, el resultado siempre será 0 los parámetros 
-	 * Caso especial: metidos deben de estar entre 0 y 1.797E308. De lo contrario saltaría
-	 * error.
+	 * Para multiplicar tres números a la vez, tanto reales como enteros 
+	 * Caso especial: en caso que uno de los parámetros sea 0, el resultado siempre será 0 los parámetros 
+	 * Caso especial: metidos deben de estar entre 0 y 1.797E308. De lo contrario saltaría error.
 	 * 
 	 * @param x
 	 * @param a
@@ -61,13 +57,12 @@ public class Producto {
 	}
 
 	/**
-	 * para sacar la potencia de un número entero en caso que el parámetro x sea 0,
-	 * el resultado siempre será 0. En caso que el parámetro a sea 0, el resultado
-	 * será siempre 1 independientemete del parámetro de su base. Al igual que si los dos parámetros 
-	 * metidos son 0 el resultado será 1. 
-	 * usámos el tipo de parámetros long para ampliar la capacidad de los números introducidos 
-	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 9223372036854775807.
-	 * De lo contrario saltaría error
+	 * Para sacar la potencia de un número entero  
+	 * Usámos el tipo de parámetros long para ampliar la capacidad de los números introducidos 
+	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 9223372036854775807. De lo contrario saltaría error.
+	 * Caso especial: en caso que el parámetro x sea 0, el resultado siempre será 0. 
+	 * En caso que el parámetro a sea 0, el resultado será siempre 1 independientemete del parámetro de su base. 
+	 * Al igual que si los dos parámetros metidos son 0 el resultado será 1.
 	 * 
 	 * @param x
 	 * @param a
@@ -78,12 +73,11 @@ public class Producto {
 	}
 
 	/**
-	 * para sacar la potencia de un número entero en caso que el parámetro x sea 0,
-	 * el resultado siempre será 0. En caso que el parámetro a sea 0, el resultado
-	 * será siempre 1, independientemete del parámetro de su base. Al igual que si los dos parámetros 
-	 * metidos son 0 el resultado será 1. 
-	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 1.797E308. De lo contrario
-	 * saltaría error 
+	 * Para sacar la potencia de un número entero 
+	 * Caso especial: en caso que el parámetro x sea 0, el resultado siempre será 0. 
+	 * En caso que el parámetro a sea 0, el resultado será siempre 1, independientemete del parámetro de su base.
+	 * Al igual que si los dos parámetros metidos son 0 el resultado será 1. 
+	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 1.797E308. De lo contrario saltaría error 
 	 * Caso Especial: en el caso de algún parámetro NaN el resultado daría un NaN
 	 * 
 	 * @param x
