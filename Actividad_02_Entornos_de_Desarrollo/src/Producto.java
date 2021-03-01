@@ -63,8 +63,9 @@ public class Producto {
 	/**
 	 * para sacar la potencia de un número entero en caso que el parámetro x sea 0,
 	 * el resultado siempre será 0. En caso que el parámetro a sea 0, el resultado
-	 * será siempre 1 independientemete del parámetro de su base usámos el tipo de
-	 * parámetros long para ampliar la capacidad de los números introducidos 
+	 * será siempre 1 independientemete del parámetro de su base. Al igual que si los dos parámetros 
+	 * metidos son 0 el resultado será 1. 
+	 * usámos el tipo de parámetros long para ampliar la capacidad de los números introducidos 
 	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 9223372036854775807.
 	 * De lo contrario saltaría error
 	 * 
@@ -77,9 +78,10 @@ public class Producto {
 	}
 
 	/**
-	 * para sacar la potencia de un número real en caso que el parámetro x sea 0, el
-	 * resultado siempre será 0. En caso que el parámetro a sea 0, el resultado será
-	 * siempre 1 independientemete del parámetro de su base 
+	 * para sacar la potencia de un número entero en caso que el parámetro x sea 0,
+	 * el resultado siempre será 0. En caso que el parámetro a sea 0, el resultado
+	 * será siempre 1, independientemete del parámetro de su base. Al igual que si los dos parámetros 
+	 * metidos son 0 el resultado será 1. 
 	 * Caso Especial: los parámetros metidos deben de estar entre 0 y 1.797E308. De lo contrario
 	 * saltaría error 
 	 * Caso Especial: en el caso de algún parámetro NaN el resultado daría un NaN
